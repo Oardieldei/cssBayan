@@ -65,3 +65,85 @@ h1, h2, h3, h4, h5, h6 {
 
 /* end */
 
+/* 1rem == 16px */
+
+.full-container {
+	width: 50rem;
+	margin: 3rem auto;
+	box-shadow: dodgerblue 0 0 2rem;
+	border: .0625rem dodgerblue solid;
+	border-radius: .3rem;
+	padding: 1rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.header {
+	padding-bottom: 1rem;
+	border-bottom: .0625rem dodgerblue solid;
+}
+
+.main {
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.input {
+	display: none;
+}
+
+.label {
+	display: flex;
+	flex-direction: column;
+	gap: .7rem;
+	font-size: 1.5rem;
+}
+
+.meme_up-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.meme_image {
+	max-width: 0;
+	transition: .3s;
+}
+
+.meme_img {
+	display: flex;
+	justify-content: center;
+}
+
+.meme_icon {
+	opacity: 0;
+	transform: none;
+	transition: .3s;
+}
+
+.input:checked + .label .meme_image {
+	max-width: 45rem;
+}
+
+@media (hover: hover) {
+	.main:hover .meme_icon {
+		opacity: 1;
+	}
+
+	.main:hover .meme_text {
+		text-decoration: underline;
+	}
+
+	.label:hover .meme_image {
+		max-width: 45rem;
+	}
+
+	.label:hover .meme_icon {
+		transform: rotate(45deg);
+	}
+}
