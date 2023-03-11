@@ -130,6 +130,16 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 45rem;
 }
 
+.input:checked + .label .meme_icon {
+	transform: rotate(45deg);
+	opacity: 1;
+}
+
+.label:active .meme_text,
+.label:active .meme_icon {
+	color: dodgerblue;
+}
+
 @media (hover: hover) {
 	.main:hover .meme_icon {
 		opacity: 1;
@@ -137,6 +147,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	.main:hover .meme_text {
 		text-decoration: underline;
+	}
+
+	.label:hover {
+		cursor: pointer;
 	}
 
 	.label:hover .meme_image {
