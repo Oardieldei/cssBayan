@@ -65,8 +65,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* end */
 
-/* 1rem == 16px */
-
 .full-container {
 	width: 50rem;
 	margin: 3rem auto;
@@ -133,6 +131,10 @@ h1, h2, h3, h4, h5, h6 {
 .input:checked + .label .meme_icon {
 	transform: rotate(45deg);
 	opacity: 1;
+}
+
+.input:checked + .label .meme_text {
+	text-decoration: underline;
 }
 
 .label:active .meme_text,
